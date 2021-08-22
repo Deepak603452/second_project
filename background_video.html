@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>background_video</title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+		font-family: sans-serif; 
+	}
+	.main{
+		width: 100%;
+		height: 100Vh;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.main video{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+		pointer-events: none;
+		opacity: 0.4;
+	}
+	.text{
+		color: white;
+		position: absolute;
+		font-size: 20px;
+		width: 500px;
+		height: 500px;
+		text-align: center;
+		margin: 0px auto;
+		z-index: 1;
+		overflow: hidden;
+	}
+	h1{
+		text-transform: uppercase;
+		color: royalblue;
+		font-size: 4em; 
+	}
+	p{
+		background-color: grey;
+		opacity: 0.3;
+		font-size: 1em; 
+		text-decoration: none;
+		text-align: justify-all;
+	}
+	span{
+		color: white;
+	}
+	span:hover{
+		color: red;
+		font-size: 1.1em;
+	}
+
+</style>
+
+<body>
+<div class="main">
+	<video autoplay muted loop>
+		<source src="video-bg.mp4" type="video/mp4">
+	</video>
+	<div class="text">
+		<h1>DEEPAK <span>&#10084</span> kalpna</h1>
+		<p>C is a general purpose programming language, which can be used to design any type of desktop based applications.<br>
+		C language program is hardware independent.<br>
+		For C language, the standard compilers can be used to compile and execute the program.<br>
+		In the C programming language, we can use standard function like printf(), scanf() etc for output and input.<br>
+		Readability modifications, bug fixing are very easy in a C language program. C language compilers generate operating system dependent executable files that can be run on the same operating system.<br>
+		GCC (GNU Complier collection), Borland turbo C, Intel C++ compiler are some of the popular compilers which are used to compile, execute a C language program.<br><br>
+		</p>
+	</div>
+</div>
+</body>
+</html>
